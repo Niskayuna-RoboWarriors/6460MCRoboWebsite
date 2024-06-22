@@ -4,7 +4,7 @@ function getPageHead(page){
     let pageHead= '<div class="topbar"><font size=100% color=white><b><center>6460 Minecraft Server Website!</center></b></font>\n'+
     '<table align="center">\n'+
         '<tr>\n'+
-            '<td><center><button class="btn-hover color-'+((page=="home")?'6':'5')+'" onclick="gotoApprovedmods()">Home Page</button></center></td>\n'+
+            '<td><center><button class="btn-hover color-'+((page=="home")?'6':'5')+'" onclick="gotoIndex()">Home Page</button></center></td>\n'+
             '<td><center><button class="btn-hover color-'+((page=="mods")?'6':'5')+'" onclick="gotoApprovedmods()">Approved Mods</button></center></td>\n'+
             '<td><center><button class="btn-hover color-'+((page=="serverstatus")?'6':'5')+'" onclick="gotoServerstatus()">Server Status</button></center></td>\n'+
         '</tr>\n'+
