@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cool Craft Server Website!</title>
+        <link href="./styles.css" rel="stylesheet" type="text/css"/>
+        <link href="./mccolorchanger.js" type="text/javascript">
+		<link href="./imgs/Nisky RoboWarriors Logo (2023-2024).png" rel="icon" />
+        <meta charset="utf-8">
+    </head>
+    <script src="./common.js"></script>
+    <script>
+		 window.onload=function(){
+             loadPageHead('serverstatus')
+         }
+	</script>
+<br>
+<html>
+<head>
+</head>
+<body>
+
+<!-- <script src="https://cc.cbi-games.org/loginCookieCheck.js"></script>   -->
+<script src="./common.js"></script>    
+<script src="./mccolorchanger.js"></script>
+<noscript><i>Javascript required to load this page. Turn it on to see it please. Thanks</i></noscript>
+
+</body>
+</html>
+
+<div>
+    <span class="headBlock"></span>
+</div>
+<br>
+
+<!-- Top Page Box -->
+
+        <div class="serverstatusmainbar"><font size=100% color="White"><b><center>Nisky Robotics Server Status</center></b></font>
+        <center><font color="white"><h2>This is the Robotics Server Ping page. The server gets pinged every 5 minutes.</h2></font>
+        </div>
+        
+
+        <!-- This is some html code I tried to make the javascript into text. -->
+        <div class="serverstatusmainbar1"><br>
+<!-- Cool Craft Server .js Code -->
+<script src="https://mcapi.us/scripts/minecraft.min.js">//This is a CONST. Not set as it, but it is used for the entire rest of this code</script>
+<script>
+    //COOL CRAFT ALL THE MODS 6 SERVER PING
+    MinecraftAPI.getServerStatus('mcjava.niskyrobotics.club', {
+        port: 54565 // Port
+    }, function (err, status) {
+        if (err) {
+            return document.querySelector('.server-status3').innerHTML = '❌ Robotics Server is Offline.';
+        }
+            document.querySelector('.server-online3').innerHTML = status.online ? '✅ Robotics Server is Online' : '❌ Robotics Server is Offline'; //Sends a server status to see if it is online or not.
+            document.querySelector('.players-motd3').outerHTML = parseStyle(status.motd_json).outerHTML //Shows the server's Message of the Day
+            document.querySelector('.players-now3').innerHTML = status.players.now //Shows how many players are online at that time
+            document.querySelector('.players-max3').innerHTML = status.players.max //Shows what is the maximum amount of players can be online at once
+            let uts = status.last_updated //uts = unix timestamp, server ping last timed at with the unix time stamp, in seconds
+            let now = Date.now()//returns the number of millisecconds SINCE January 1, 1970.
+            let nseconds = (Math.round(now / 1000)) //Divides milliseconds into seconds.
+            let nminutes = (Math.round(nseconds / 60)) //Divides seconds to minutes
+            let sminutes = Math.round(uts/60)
+            let sdiff = Math.abs(sminutes - Math.abs(nminutes)) //sminutes = Server Time Ping in Minutes ----- nminutes = The time and now
+            console.log(nseconds+" | "+sminutes)
+            document.querySelector('.players-last-updated3').innerHTML = sdiff + ((sdiff==1)?" Minute ago":" Minutes ago")
+            document.querySelector('.players-server-name3').innerHTML = status.server.name //Fetches the version that is running on the Minecraft Server
+    });
+</script>
+
+ <!-- Server #3: Cool Craft ATM 6 Server -->
+ <center><font size=20% color="Bright Red"><b>Robotics Server</b></font><br>
+    <font color=black size=5%><b>Status:</b> <div class="server-status3"> <span class="server-online3"></span></div>
+        <b>Motd (Message of the Day):</b><div class="server-status3"> <span class="players-motd3"></span></div> 
+        <b>Players Online:</b><div class="server-status3"> <span class="players-now3"></span></div> 
+        <b>Max Players: </b><div class="server-status3"> <span class="players-max3"></span></div> 
+        <b>Server Last Pinged: </b> <div class="server-status3"> <span class="players-last-updated3"></span></div>
+        <b>Server Version: <br></b> <div class="server-status3"> <span class="players-server-name3"></span></div></font>
+        <br><br><br>
+        <font color="white"><i><h3>All servers pinged by using the API from <a class="https://www.mcapi.us" href="https://www.mcapi.us" target="_blank">https://www.mcapi.us</h3></a></i></font>  
+</center> </div>
+</div></body>
+</html>

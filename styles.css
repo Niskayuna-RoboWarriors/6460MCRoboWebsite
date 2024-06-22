@@ -1,0 +1,197 @@
+/* Link Clicking */
+a:link{
+    color: rgb(0, 140, 255);
+}
+
+/* Page Color */
+a.coolcraftpage{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+a.announcementlink{
+    color: rgb(0, 48, 95);
+    text-decoration: none;
+}
+
+/* Page Color 2 */
+a.coolcraftpage2{
+    color: rgb(25, 0, 255);
+    text-decoration: none;
+}
+
+/* Title Box */
+div.barcolor{
+    background-color: rgb(0, 140, 255);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+/* Page Box + Title */
+div.topbar{
+    background-color: navy;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+  /* BACKGROUND COLOR */
+body{
+    background-color: black;
+    }
+
+/* Color box for Cool Craft */
+div.coolcraftboxlink{
+    background-color: rgb(30, 255, 0);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+div.coolcraftinfo{
+    background-color: rgb(0, 68, 255);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+/* Button Animations */
+.btn-hover.color-5 {
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #00ff84, #00ff84);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+    overflow: hidden;
+    color: #fff;
+   
+}
+.btn-hover.color-6 {
+    background-image: linear-gradient(to right, #807809, #807809, #9b9103, #9b9103);
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.308);
+
+}
+
+    
+    .btn-hover {
+        width: 200px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 20px;
+        height: 55px;
+        text-align:center;
+        border: none;
+        background-size: 300% 100%;
+    
+        border-radius: 50px;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    
+    .btn-hover:hover {
+        background-position: 100% 0;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    
+    .btn-hover:focus {
+        outline: none;
+    }
+
+/* Page Box Clicker (On that webpage) (FONT WILL NOT BE USABLE IF YOUR USING FONT BEYOND THIS)
+.pageboxclick{
+    background-color: yellow;
+    height: 100%;
+    width:  3.5in;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Page Box Clicker  */
+/* .pageboxclickon{
+    background-color: yellowgreen;
+    height: 100%;
+    width: 3.5in;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer; 
+}*/
+
+
+/* .pageboxclick:hover{
+    color: rgb(148, 148, 9);
+} */
+
+/* IMPORTANT ANNOUNCEMENT */
+div.announcementbox{
+    background-color: crimson;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Color of Boxes */
+a.colorboxes{
+    text-decoration: none;
+    color: rgb(0, 183, 255);
+}
+
+
+/* *PAGE 2 STUFF* */
+div.page2topbar{
+    background-color: rgb(231, 150, 0);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+div.page2topbar2{
+    background-color: rgb(231, 15, 0);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+/* Page 2, main bar color */
+div.page2mainbar{
+    background-color:rgb(248, 252, 0);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+/* Page 3, main car color */
+
+div.page3mainbar{
+    background-color: rgb(174, 0, 255);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+/* Server Status, top bar color */
+div.serverstatusmainbar{
+    background-color: rgb(8, 185, 8);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+/* Server status, main bar color */
+div.serverstatusmainbar1{
+    background-color: rgb(231, 150, 0);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+/* Link Hovering (KEEP AS LOW AS POSSIBLE PLEASE!!!!!!!!!!*/
+a:hover{
+    color:purple;
+}
